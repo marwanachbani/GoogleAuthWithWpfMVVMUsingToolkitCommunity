@@ -1,0 +1,17 @@
+﻿<Window x:Class="GoogleAuth.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GoogleAuth" d:DataContext="{d:DesignInstance Type=local:MainWindowViewModel}"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="MainWindow" MaxHeight="450" MaxWidth="251" MinHeight="433" MinWidth="251">
+    <Grid   Width="251" Background="#FF549ED7">
+        <Button x:Name="button" HorizontalAlignment="Left" Margin="20,300,0,0" VerticalAlignment="Top" Width="206" Height="46" Command="{Binding LoginCommand}"
+                BorderThickness="0" Padding="0" Background="Transparent">
+            <Image Source="/btn_google_sign-in.png" Stretch="UniformToFill"/>
+        </Button>
+        <TextBlock Background="{Binding Background}" TextAlignment="Center" Foreground="{Binding Forecolor}" VerticalAlignment="Bottom" Height="30" Text="{Binding Response}" FontSize="24" FontFamily="Berlin Sans FB Demi"/>
+    </Grid>
+</Window>

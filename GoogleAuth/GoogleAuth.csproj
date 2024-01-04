@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="btn_google_sign-in.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.64.0" />
+    <PackageReference Include="Google.Apis.Plus.v1" Version="1.49.0.1627" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="btn_google_sign-in.png" />
+  </ItemGroup>
+
+</Project>
